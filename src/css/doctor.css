@@ -1,0 +1,78 @@
+/* h1 {
+    text-align: center;
+    padding: 20px;
+    color: white;
+} */
+
+.doctors-section {
+    padding: 50px 0;
+    background-color: #00bfa6;
+}
+.doctors-section h1{
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    padding-bottom: 50px;
+}
+.doctor{
+    background-color: white;
+    color: #00bfa6;
+    font-size: 40px;
+}
+
+.doctors-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.doctor-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+}
+
+.doctor-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.doctor-card h3 {
+    margin: 15px 0 5px;
+}
+
+.doctor-card p {
+    color: #00bfa6;
+    font-size: 18px;
+}
+
+.social-links {
+    margin-top: 10px;
+}
+
+.social-links a {
+    margin: 0 10px;
+    color: #333;
+    text-decoration: none;
+    font-size: 20px;
+}
+.social-links a i{
+    color: black;
+}
+
+.social-links a i:hover {
+    color: #00bfa6;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .doctors-container {
+        grid-template-columns: 1fr;
+    }
+}

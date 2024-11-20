@@ -1,0 +1,130 @@
+.hospital-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* width: 80%; */
+    max-width: 100%;
+
+}
+
+.hospital-content {
+    flex: 1;
+    padding: 20px;
+    padding-left: 100px;
+}
+
+.hospital-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.hospital-content h1 .highlight {
+    color: #00bfa6;
+}
+
+.hospital-content p {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    color: #555;
+}
+
+.contact-btn {
+    padding: 10px 20px;
+    background-color: #00bfa6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-btn:hover {
+    background-color: #00796b;
+}
+
+.hospital-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.hospital-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .hospital-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* .hospital-content {
+        padding-top: 100px;
+    } */
+
+    .hospital-image {
+        margin-top: 20px;
+    }
+
+    .hospital-content h1 {
+        font-size: 2em;
+    }
+
+    .hospital-content p {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 768px) {
+    .hospital-section {
+        /* padding: 10px; */
+        max-width: 100%;
+        
+    }
+    .hospital-content {
+        width: 100%;
+        padding-left: 0%;
+
+        /* margin: 0px 0px; */
+    }
+
+    .hospital-content h1 {
+        font-size: 1.8em;
+        text-align: left;
+    }
+
+    .hospital-content p {
+        font-size: 0.9em;
+        width: 100%;
+        text-align: left;
+    }
+
+    .contact-btn {
+        padding: 8px 16px;
+        float: left;
+    }
+}
+
+@media (max-width: 480px) {
+    .hospital-content h1 {
+        font-size: 1.5em;
+    }
+
+    .hospital-content p {
+        font-size: 0.8em;
+        width: 100%;
+    }
+}
+
